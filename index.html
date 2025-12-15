@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Copiar Pix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    button {
+      font-size: 18px;
+      padding: 16px 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="copiarPix()">Copiar chave Pix</button>
+
+  <script>
+    function copiarPix() {
+      navigator.clipboard.writeText("SUA_CHAVE_PIX_AQUI")
+        .then(() => {
+          alert("Chave Pix copiada");
+        })
+        .catch(() => {
+          alert("Não foi possível copiar");
+        });
+    }
+  </script>
+</body>
+</
