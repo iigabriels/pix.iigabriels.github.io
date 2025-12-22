@@ -92,8 +92,8 @@ function gerarPix() {
   const valor = document.getElementById("valor").value;
   const desc  = document.getElementById("desc").value || "Pagamento Pix";
 
-  let payload =
-    "000201" +
+ let payload =
+  "000201010212" +
     campo("26",
       campo("00","BR.GOV.BCB.PIX") +
       campo("01", chave) +
